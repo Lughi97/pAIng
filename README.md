@@ -208,15 +208,16 @@ The variables are related to the disk object. All of them are self-explanatory
  <summary>Click here to show/hide the <code>ResetDisk()</code> method...</summary>
             <br>
 
-   // Function called to reset the environment when the disk goes out of bounds.
-    // is selected a new direction of the disk.
+     // Function called to reset the environment when the disk goes out of bounds.
+      // is selected a new direction of the disk.
     public void RestDisk()
     {
         if (OutOfBounds)
             OutOfBounds = false;
         transform.position = startPosition;
         int startRandomDirection = Random.Range(0, 360);
-        direction = new Vector3(Mathf.Cos(startRandomDirection * Mathf.Deg2Rad), 0f, Mathf.Sin(startRandomDirection * Mathf.Deg2Rad));
+        direction = new Vector3(Mathf.Cos(startRandomDirection * Mathf.Deg2Rad), 0f,                   
+        Mathf.Sin(startRandomDirection * Mathf.Deg2Rad));
         rb.velocity = direction * speed;
     }
 
@@ -225,9 +226,145 @@ The variables are related to the disk object. All of them are self-explanatory
 
 ## Paddle class documentation
 ### Variables
-- `Start()`:
+<details>
+<summary>Click here to show/hide the code for variables...</summary>
+    <br>
+  
+    public Transform diskTransform;
+    public float speed = 10f;
+    public Vector3 startPosition;
+    public bool resetFirstHit = true;
+    public float proximityThreshold = 0.5f;
+    
+</details>
+
+The variables are related to the disk object. Some of them are self-explanetory Only:
+- `proximityThreshold`: is a float used to tell how the agent z coordinate position has to near to the z coordinate position of the disk to receive a reward.
+
 ### Methods
- --need to add code and explanation
+- `Start()`: save the startposition as the current transform.position
+<details>
+        <summary>Click here to show/hide the <code>Start()</code> method...</summary>
+            <br>
+
+        void Start()
+        {
+          startPosition = transform.position;
+        }
+
+  </details>                 
+
+
+- `OnEpisodeBegin()`: This  method form the Unity mlagents library is used to set up the Agent instance at the beginning of each episode and  reset the disk by calling the `ResetDisk()` method.
+
+<details>
+ <summary>Click here to show/hide the <code>OnEpisodeBegin()</code> method...</summary>
+            <br>
+
+    public override void OnEpisodeBegin()
+    {
+     
+        transform.position = startPosition;
+        RestDisk();
+       
+    }
+
+   </details>    
+
+
+- `CollectObservation()`: this mlagents method  collects the observation vectors of the agent for the step. This function describes the current environment form the perspective of the agent needed to achieve its goal.  In this case, the agent needs to keep track of its current z position(this is due to how the paddle is placed in the game field in the unity scene) the current x and z position, and the velocity component of the disk for the agent to observe and try to hit the disk to keep it inside the game field. Is important for the system and the training to  know how many elements are keep track of by the agent and needs to match the dimension of the Vector Observation of the Behavior Parameters. In this particular case the agent is observing five floats.
+
+<details>
+ <summary>Click here to show/hide the <code>CollectObservation()</code> method...</summary>
+            <br>
+
+     /*get just the x and z position and velocity of the disk to match the paddle during training*/
+    public override void CollectObservations(VectorSensor sensor)
+    {
+        sensor.AddObservation(transform.position.z);
+        sensor.AddObservation(diskTransform.position.x);
+        sensor.AddObservation(diskTransform.position.z);
+        sensor.AddObservation(diskTransform.GetComponent<Rigidbody>().velocity.x);
+        sensor.AddObservation(diskTransform.GetComponent<Rigidbody>().velocity.z);
+
+    }
+
+   </details>    
+
+- `OnActionRecived()`: This is used to specify an agent's behavior at every step, based on the provided action passed through the ActionBuffer method parameter that specify how many actions are needed to control the agent. In this particular case, since the only movement that the paddle needs to do is along a single axis which is the z-axis (because of how the paddle is positioned in the game field), it only needs one continuous action with only one element in the array. Was selected the continuos action in order to have the paddle have a more natural movement and for simplicity because if it was used the discrete action would have had 3 parameters: one to move up, one to move down, and one to stand still).
+In this function is also set the first reward that incentivizes the agent whenever its z-coordinate position is close to the z-coordinate position of the disk, under a certain treshold.
+
+
+
+<details>
+ <summary>Click here to show/hide the <code>OnActionRecived()</code> method...</summary>
+            <br>
+
+     public override void OnActionReceived(ActionBuffers actions)
+    {
+       ;
+        //move in z direction
+        float moveZ = actions.ContinuousActions[0];
+        transform.position += new Vector3(0, 0, moveZ) * Time.deltaTime * speed;
+       
+        float zDistanceToDistk = Mathf.Abs(diskTransform.position.z- transform.position.z);
+        if(zDistanceToDistk <= proximityThreshold && Mathf.Abs(diskTransform.position.x - transform.position.x)<5)
+        {
+            SetReward(0.1f);
+        }
+    }
+
+   </details>    
+
+- `Update()`: in this method the paddle, whenever the disk goes out of bounds is going to receive a negative reward and is going to end the current episode and begin a new one
+
+<details>
+ <summary>Click here to show/hide the <code>Update()</code> method...</summary>
+            <br>
+
+      private void Update()
+    {
+        if (diskTransform.GetComponent<Disk>().OutOfBounds|| Vector3.Distance(transform.position,   diskTransform.position) > 13f)
+        {
+          
+            SetReward(-1f);
+            RestDisk();
+            EndEpisode();
+        }
+    
+    }
+
+   </details>  
+   
+- `OnCollisionEnter()`: in this method, each time that the paddle manages to hit the disk, it will recive a positive reward.
+
+<details>
+ <summary>Click here to show/hide the <code>OnCollisionEnter()</code> method...</summary>
+            <br>
+
+       private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Disk")
+        {
+            SetReward(1f);
+        }
+    }
+
+   </details>    
+
+- `ResetDisk()`: is a function that calls the RestDisk of the Disk class.
+<details>
+ <summary>Click here to show/hide the <code>ResetDisk()</code> method...</summary>
+            <br>
+
+     private void RestDisk()
+    {
+       
+        diskTransform.GetComponent<Disk>().RestDisk();
+    }
+   </details>    
+  
+
 ## Additional Script for the Paddle class
 --need to add code and explanation
 ### Behaviour Parameters & Request Decision class documentation
