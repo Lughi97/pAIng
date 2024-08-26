@@ -59,6 +59,8 @@ In this project, we have two different scenes:
  <li>The second scene is the one where we have a single game where we have two paddles that are going to play using the same model obtained in the training to play against each other and not to let the disk go out of bounds. </li>
 
 ## Disk class documentation
+To solve the constraints put on the isk the Disk class is used to simulate a bouncing disk ina field that when it bounces only off the wall will conserve the energy but not the direction.
+### Variables
 <details>
 <summary>Click here to show/hide the code for variables...</summary>
     <br>
@@ -71,7 +73,160 @@ In this project, we have two different scenes:
     
 </details>
 
+The variables are related to the disk object. All of them are self-explanatory
+
+### Methods
+- `Start()`: Here set up the random direction of the disk, saving the start position and apply the velocity to the rigidbody.
+<details>
+        <summary>Click here to show/hide the <code>Start()</code> method...</summary>
+            <br>
+
+          void Start()
+          {
+              rb = GetComponent<Rigidbody>();
+              int startRandomDirection = Random.Range(0, 360);
+              direction = new Vector3(Mathf.Cos(startRandomDirection * Mathf.Deg2Rad), 0f,           
+              Mathf.Sin(startRandomDirection * Mathf.Deg2Rad));
+              startPosition = transform.position;
+              rb.velocity = rb.velocity.normalized * speed;
+         }
+
+  </details>                 
+
+
+- `OncollisionEnter()`: it extrapolate the normal of the collision between the disk and the paddle or the wall by accessing their tags (set-up) in the Unity scene.
+
+<details>
+ <summary>Click here to show/hide the <code>OncollisionEnter()</code> method...</summary>
+            <br>
+
+     private void OnCollisionEnter(Collision collision)
+        {
+          if (collision.gameObject.tag == "Wall")
+          {
+              BounceOffWall(collision.contacts[0].normal);
+          }
+          if (collision.gameObject.tag == "Paddle")
+          {
+              BounceOffPaddle(collision.contacts[0].normal);
+          }
+        }
+
+   </details>    
+
+
+- `BounceOffWall()`: computes the new outgoing direction using the Vector3.reflect function that reflects a vector of the plane defined by a normal, in this case the normal of the collision. Afterward using the 2d rotation matrix, the random value between the range of [-5 to 5] degrees and normalize it. To calculate the new direction, the 3D matrix rotation angle:
+  <br> (check how to put it better)
+  R(θ) = | cos(θ)  0  -sin(θ) |
+  <br>
+         |   0     1     0    |
+  <br>
+         | sin(θ)  0   cos(θ)  |
+  <br>
+  is used to calculate the new outgoing direction.
+  Then the rb.velocity is updated with the new direction and maintain the same speed. 
+
+<details>
+ <summary>Click here to show/hide the <code>BounceOffWall()</code> method...</summary>
+            <br>
+
+     //Calculate the new outgoing direction based on the normal of the collision contact with the wall.
+    private void BounceOffWall(Vector3 normal)
+    {
+        direction = Vector3.Reflect(direction, normal);
+
+        // Calculate the new outgoing direction of the disk.
+        float randomDeflectAngle = Random.Range(-5f, 5f) * Mathf.Deg2Rad;
+        // use the 2d rotation matrix.
+        float directionX = direction.x * Mathf.Cos(randomDeflectAngle) - direction.z *           
+        Mathf.Sin(randomDeflectAngle);
+        float directionZ = direction.x * Mathf.Sin(randomDeflectAngle) + direction.z * 
+         Mathf.Cos(randomDeflectAngle);
+
+        direction = new Vector3(directionX, 0f, directionZ).normalized;
+        //apply the new direction with the same speed in order keep energy.
+        rb.velocity = direction * speed;
+        SpeedCheck();
+    }
+
+   </details>    
+
+- `BounceOffPaddle()`: Similar to Bounce of wall  utilizes only the Vector3.Reflect and apply the new direction to the rgidbody velocity.
+
+<details>
+ <summary>Click here to show/hide the <code>BounceOffPaddle()</code> method...</summary>
+            <br>
+
+     //calculate the new outgoing direction based on the normal of the collision contact with the                 paddle.
+    private void BounceOffPaddle(Vector3 normal)
+    {
+       
+        direction = Vector3.Reflect(direction, normal).normalized;
+        rb.velocity = direction * speed;
+        SpeedCheck();
+
+    }
+
+   </details>    
+
+- `SpeedCheck()`: it checks if the rb.velocity.speed has been badly influenced, it only reset the speed in the correct direction.
+
+<details>
+ <summary>Click here to show/hide the <code>SpeedCheck()</code> method...</summary>
+            <br>
+
+     private void SpeedCheck()
+    {
+        if (rb.velocity.magnitude < speed)
+        {
+            rb.velocity = direction * speed;
+        }
+    }
+
+   </details>  
+   
+- `OnTriggerEnter()`: it resets the position of the disk to the start position and applies a new random direction for the disk to take. This is called when a new training episode begins.
+
+<details>
+ <summary>Click here to show/hide the <code>OnTriggerEnter()</code> method...</summary>
+            <br>
+
+     // trigger that checks if the disk is out of bounds.
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Bound" || other.gameObject.tag == "BoundPaddle")
+        {
+            OutOfBounds = true;
+        }
+    }
+
+   </details>    
+
+   - `ResetDisk()`: it detects when the disk is out of bounds. In case of an out-of-bound event then the environment will reset (see PaddleAi class for more detail).
+
+<details>
+ <summary>Click here to show/hide the <code>ResetDisk()</code> method...</summary>
+            <br>
+
+   // Function called to reset the environment when the disk goes out of bounds.
+    // is selected a new direction of the disk.
+    public void RestDisk()
+    {
+        if (OutOfBounds)
+            OutOfBounds = false;
+        transform.position = startPosition;
+        int startRandomDirection = Random.Range(0, 360);
+        direction = new Vector3(Mathf.Cos(startRandomDirection * Mathf.Deg2Rad), 0f, Mathf.Sin(startRandomDirection * Mathf.Deg2Rad));
+        rb.velocity = direction * speed;
+    }
+
+   </details>    
+
+
 ## Paddle class documentation
+### Variables
+- `Start()`:
+### Methods
  --need to add code and explanation
 ## Additional Script for the Paddle class
 --need to add code and explanation
@@ -128,12 +283,12 @@ Mlagenst has 2 different types of learning algorithms:  PPO (proximal Policy Opt
     
 <ul>Hyperparametrs
 <li>Batch size: the number of experiences used for one iteration of a gradient descend update. It should be a fraction of the buffer size.
-Buffer size: it defines the number of experiences (agent observation, action, and reward obtained) before doing any learning or model updating.
+Buffer size defines the number of experiences (agent observation, action, and reward obtained) before doing any learning or model updating.
 </li>
 <li>Learing rate: corresponds to the strength of each gradient descent update step. </li>
   <li>Beta: is the strength of the entropy regularization to make the policy more random for the agent to explore the action space during training. </li>
   <li> Epsilon: is the threshold of divergence between the old and the new calculated policy during the gradient descent updating</li> </li>
-  <li>Lambda: is the lambda used for calculating the Generalized Advantage Estimation. This is how much the agent relies on its current value estimate when calculating an updated value estimate. Low value the agent relies on its current value estimate, making him more biased. On the other hand, if it's a high value it relies more on the actual reward received in the environment. This parameter helps us to balance between the high bias and exploration. </li>
+  <li>Lambda: the lambda used to calculate the Generalized Advantage Estimation. This is how much the agent relies on its current value estimate when calculating an updated value estimate. Low value the agent relies on its current value estimate, making him more biased. On the other hand, if it's a high value it relies more on the actual reward received in the environment. This parameter helps us to balance high bias and exploration. </li>
   <li>Number of epochs: is the number of passes through the experience bugger during gradient descent.</li>
   <li>learning_rate_schedule: defines how the learning rate changes during training. It will gradually decrease over time. In this case, the learning rate will decrease linearly form the initial value to the final value over a specified number of setups.</li
   <li>beta_schedule: refers to the beta value, in this case, is constant.</li
@@ -145,9 +300,9 @@ Buffer size: it defines the number of experiences (agent observation, action, an
 #### Training Process
 This session of the Assignment is the most time-consuming because it requires monitoring the changes in the mean reward and standard deviation of rewards to analyze in real-time how effectively the agent in training.
 In these images (need to be added) are some moments that represent the current mean reward and str (standard deviation reward) in precise steps, in which the interval is set by the hyperparameter summary_freq.
-Analyzing this run time training information it's highlighted a steady mean reward growth increasing each step summary, apart from some fluctuation that is always in the positive value. This means that the agent is learning to take action that yields higher rewards over time.
-Taking also into consideration the Standard Deviation of Rewards because can highlight a more detailed look on the agent's performance. In this case, the std keeps increasing as well over time and it's having some high fluctuations (between value-value) (add image to put correct data). This shows that the agent is exploring different strategies more actively to yield better results.
-This, however, is not enough information that is useful to the developer to understand if the training was effective. 
+Analyzing this run time training information highlights a steady mean reward growth increasing each step summary, apart from some fluctuation always in the positive values. This means the agent is learning to take action that yields higher rewards over time.
+Considering  the Standard Deviation of Rewards can highlight a more detailed look at the agent's performance. In this case, the std keeps increasing as well over time and it's having some high fluctuations (between value-value) (add image to put correct data). This shows that the agent is exploring different strategies more actively to yield better results.
+However, this is not enough information useful to the developer to understand if the training was effective. 
 To have more information is advised to analyze also the information given by the tensorboard application.
 
 #### Tensorboard results analysis
@@ -173,7 +328,7 @@ In summary, all of these graphs can sum up the training of the neural network mo
 Analyzing all these graphs it can be concluded that from the begging is a steady increase in the mean reward and also the episode length with high variability since the agent gets better and better in following its goal and exploring different ways to keep the disk inside the filed. This idea is refornced by observing also the loss statistic and policy statistic that specific value mentioned increase and decrease correctly for each useful training session made by the agent.
 
 
-div align="center">
+<div align="center">
 ## Result of the training
 </div>
 
