@@ -225,6 +225,7 @@ The variables are related to the disk object. All of them are self-explanatory
 
 
 ## Paddle class documentation
+This class implements the behavior of the agent  utilizing the Unity mlagents libraries (Mlagents, Mlagenst.Sensors, Mlagents.actuators) where is added positive or negative rewards for the paddle to learn to keep the disk inside the field.  In this section, all the reward values are fine-tuned after multiple training instances, and found the ones that make the agents more reactive and responsive to the disk movement.
 ### Variables
 <details>
 <summary>Click here to show/hide the code for variables...</summary>
@@ -363,11 +364,19 @@ In this function is also set the first reward that incentivizes the agent whenev
         diskTransform.GetComponent<Disk>().RestDisk();
     }
    </details>    
-  
 
-## Additional Script for the Paddle class
---need to add code and explanation
-### Behaviour Parameters & Request Decision class documentation
+  Both of these scripts are simple environments and agent setups. The main challenge is to fine-tune both the hyperparameters and reward system (shown previously) for the agent to hit and keep the disk inside the filed
+
+
+
+## Behaviour Parameters & Request Decision class documentation
+In this section, the inspector component connects with the training session in the Python environment.
+In the same object that has the Paddle Agent script, it needs to have the Behaviour Parameters  script and Decision script. 
+In the parameters of the Behaviour Parameter script, there is the  behavior name that is important to define to identify the behavior of the agent.
+Vector Observation: is selected how large is the size of the vector observation, in this case by checking the CollectObservation in the PaddleAi script is 5 elements, the 5 floats mentioned in the `OnActionRecived()`.
+ Action: select the type and quantity of action that is going to be used by our agent. In this case like mention in the PaddleAI script, is used only one continuous action type.
+Model: is the reference where is going to be added the trained neural network model created during the training.
+Request Decision Script: it requests a decision every certain amount of time and then takes action.
 
 <div align="center">
 
