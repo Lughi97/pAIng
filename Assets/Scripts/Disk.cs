@@ -9,68 +9,74 @@ public class Disk : MonoBehaviour
     private Rigidbody rb;
     public bool OutOfBounds;
     private Vector3 startPosition;
-    // Start is called before the first frame update
+  
+
+    //Start the disk movement at a random direction.
     void Start()
     {
+        
         rb = GetComponent<Rigidbody>();
         int startRandomDirection = Random.Range(0, 360);
-        direction = new Vector3(Mathf.Cos(startRandomDirection), 0f, Mathf.Sin(startRandomDirection));
-        direction = Random.onUnitSphere;
-        direction.y = 0;
+        direction = new Vector3(Mathf.Cos(startRandomDirection * Mathf.Deg2Rad), 0f, Mathf.Sin(startRandomDirection * Mathf.Deg2Rad));
         startPosition = transform.position;
-        rb.velocity = direction * speed;
+        rb.velocity = rb.velocity.normalized * speed;
     }
 
-    private void Update()
-    {
-      //  Debug.Log(rb.velocity.magnitude);
-    }
     private void FixedUpdate()
     {
-        rb.velocity = direction * speed;
-        if (rb.velocity.magnitude != 15)
+        // rb.velocity = direction * speed;
+        //  Debug.Log(rb.velocity.magnitude);
+        //SpeedCheck();
+    }
+    private void SpeedCheck()
+    {
+        if (rb.velocity.magnitude < speed)
         {
             rb.velocity = direction * speed;
         }
     }
-
-
+    // check the collision between the wall or the paddle.
     private void OnCollisionEnter(Collision collision)
     {
-        ////  Debug.log("COLLSIION");
         if (collision.gameObject.tag == "Wall")
         {
-            BounceWall(collision.contacts[0].normal);
+
+            BounceOffWall(collision.contacts[0].normal);
         }
         if (collision.gameObject.tag == "Paddle")
         {
             BounceOffPaddle(collision.contacts[0].normal);
         }
     }
-
-    private void BounceWall(Vector3 normal)
+    // calculate the new outgoing direction based on the normal of the collision contact with the wall.
+    private void BounceOffWall(Vector3 normal)
     {
         direction = Vector3.Reflect(direction, normal);
-        float changeAngleRate = Random.Range(-5f, 5f);
-        Quaternion rotation = Quaternion.AngleAxis(changeAngleRate, Vector3.up);
-        direction = rotation * direction;
-        direction = direction.normalized;
-        float angle = Vector3.Angle(direction, Vector3.right);
+
+        // Calculate the new outgoing direction of the disk.
+        float randomDeflectAngle = Random.Range(-5f, 5f) * Mathf.Deg2Rad;
+        // use the 2d rotation matrix.
+        float directionX = direction.x * Mathf.Cos(randomDeflectAngle) - direction.z * Mathf.Sin(randomDeflectAngle);
+        float directionZ = direction.x * Mathf.Sin(randomDeflectAngle) + direction.z * Mathf.Cos(randomDeflectAngle);
+
+        direction = new Vector3(directionX, 0f, directionZ).normalized;
+        //apply the new direction with the same speed in order keep energy.
         rb.velocity = direction * speed;
-
-        // Determine the quadrant based on the direction vector
-
-
-        //  Debug.log("Angle: " + angle + " degrees");
+        SpeedCheck();
     }
+
+    // calcualte the new outgoing direction based on the normal of the collision contact with the paddle.
     private void BounceOffPaddle(Vector3 normal)
     {
        
         direction = Vector3.Reflect(direction, normal).normalized;
         rb.velocity = direction * speed;
+        SpeedCheck();
 
     }
 
+    // Function called when the enviroment is reseted. The disk goes out of bounds.
+    // is selected a new direction of the disk.
     public void RestDisk()
     {
         if (OutOfBounds)
@@ -81,7 +87,7 @@ public class Disk : MonoBehaviour
         rb.velocity = direction * speed;
     }
 
-
+    // trigger that checks if the disk is out of bounds.
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Bound" || other.gameObject.tag == "BoundPaddle")

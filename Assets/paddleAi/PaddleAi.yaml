@@ -1,5 +1,5 @@
 behaviors:
-  PaddleTest:
+  PaddleAi:
     trainer_type: ppo
     hyperparameters:
       batch_size: 512
@@ -24,6 +24,6 @@ behaviors:
           normalize: true
           hidden_units: 256
           num_layers: 2
-    max_steps: 2500000
+    max_steps: 3000000
     time_horizon: 1000
     summary_freq: 20000
