@@ -72,8 +72,7 @@ To solve the constraints put on the disk, the Disk class is used to simulate a b
 
 ### Variables
 <details>
-<summary>Click here to show/hide the code for variables...</summary>
-    <br>
+<br>
   
     public float speed = 15;
     public Vector3 direction;
@@ -81,15 +80,13 @@ To solve the constraints put on the disk, the Disk class is used to simulate a b
     public bool OutOfBounds;
     private Vector3 startPosition;
     
-</details>
+
 
 The variables are related to the disk object. All of them are self-explanatory
 
 ### Methods
 - `Start()`: Sets up the random direction of the disk, saving the start position and applying the velocity to the rigid body.
-<details>
-        <summary>Click here to show/hide the <code>Start()</code> method...</summary>
-            <br>
+<br>
 
           void Start()
           {
@@ -101,14 +98,13 @@ The variables are related to the disk object. All of them are self-explanatory
               rb.velocity = rb.velocity.normalized * speed;
          }
 
-  </details>                 
+           
 
 
 - `OnCollisionEnter()`: It extrapolates the normal of the collision between the disk and the paddle or the wall by accessing their tags set up in the Unity scene.
 
 <details>
- <summary>Click here to show/hide the <code>OnCollisionEnter()</code> method...</summary>
-            <br>
+ <br>
 
      private void OnCollisionEnter(Collision collision)
         {
@@ -122,7 +118,7 @@ The variables are related to the disk object. All of them are self-explanatory
           }
         }
 
-   </details>    
+ 
 
 
 - `BounceOffWall()`: Computes the new outgoing direction using the Vector3.reflect function that reflects a vector of the plane defined by a normal -- in this case, the normal of the collision. Afterward, a random value between the range of [-5 to 5] degreesù is applied to the outgoing direction  using the 3d rotation matrix and normalized. To calculate the new direction, the 3D matrix rotation angle:
@@ -135,9 +131,7 @@ The variables are related to the disk object. All of them are self-explanatory
   <br>
   Then the rb.velocity is updated with the new direction while mantaining the same speed. 
 
-<details>
- <summary>Click here to show/hide the <code>BounceOffWall()</code> method...</summary>
-            <br>
+<br>
 
      //Calculate the new outgoing direction based on the normal of the collision contact with the wall.
     private void BounceOffWall(Vector3 normal)
@@ -158,13 +152,11 @@ The variables are related to the disk object. All of them are self-explanatory
         SpeedCheck();
     }
 
-   </details>    
+   
 
 - `BounceOffPaddle()`: Similar to Bounce of wall  utilizes only the Vector3.Reflect and apply the new direction to the rgidbody velocity.
 
-<details>
- <summary>Click here to show/hide the <code>BounceOffPaddle()</code> method...</summary>
-            <br>
+<br>
 
      //calculate the new outgoing direction based on the normal of the collision contact with the                 paddle.
     private void BounceOffPaddle(Vector3 normal)
@@ -176,13 +168,11 @@ The variables are related to the disk object. All of them are self-explanatory
 
     }
 
-   </details>    
+  
 
 - `SpeedCheck()`: It checks if the rb.velocity.magnitued has been affected, it reset the speed in the correct direction.
 
-<details>
- <summary>Click here to show/hide the <code>SpeedCheck()</code> method...</summary>
-            <br>
+<br>
 
      private void SpeedCheck()
     {
@@ -192,13 +182,11 @@ The variables are related to the disk object. All of them are self-explanatory
         }
     }
 
-   </details>  
+ 
    
 - `OnTriggerEnter()`:It detects when the disk is out of bounds. In case of an out-of-bound event then the environment will reset (see PaddleAi class for more detail).
 
-<details>
- <summary>Click here to show/hide the <code>OnTriggerEnter()</code> method...</summary>
-            <br>
+<br>
 
      // trigger that checks if the disk is out of bounds.
     private void OnTriggerEnter(Collider other)
@@ -209,13 +197,11 @@ The variables are related to the disk object. All of them are self-explanatory
         }
     }
 
-   </details>    
+     
 
    - `ResetDisk()`: It resets the position of the disk to the start position and applies a new random direction for the disk to take. This is called when a new training episode begins.
 
-<details>
- <summary>Click here to show/hide the <code>ResetDisk()</code> method...</summary>
-            <br>
+<br>
 
      // Function called to reset the environment when the disk goes out of bounds.
       // is selected a new direction of the disk.
@@ -230,15 +216,14 @@ The variables are related to the disk object. All of them are self-explanatory
         rb.velocity = direction * speed;
     }
 
-   </details>    
+  
 
 
 ## Paddle class documentation
 This class implements the agent's behavior  using  the Unity ML-Agents libraries (Sensors, Actuators). Positive or negative rewards are added for the paddle to learn to keep the disk inside the field.  In this section, all the reward values are fine-tuned after multiple training instances and the ones that make the agents more reactive and responsive to the disk's movement.
 ### Variables
-<details>
-<summary>Click here to show/hide the code for variables...</summary>
-    <br>
+
+<br>
   
     public Transform diskTransform;
     public float speed = 10f;
@@ -246,30 +231,26 @@ This class implements the agent's behavior  using  the Unity ML-Agents libraries
     public bool resetFirstHit = true;
     public float proximityThreshold = 0.5f;
     
-</details>
+
 
 The variables are related to the disk object. Some of them are self-explanatory Only:
 - `proximityThreshold`: A float that indicates how close the agent's z coordinates position must be to the disk's z coordinate position to receive a reward.
 
 ### Methods
 - `Start()`: Save the startPosition as the current transform.position
-<details>
-        <summary>Click here to show/hide the <code>Start()</code> method...</summary>
-            <br>
+<br>
 
         void Start()
         {
           startPosition = transform.position;
         }
 
-  </details>                 
+             
 
 
 - `OnEpisodeBegin()`: The ML-Agents method is used to set up the Agent instance at the beginning of each episode and  reset the disk by calling the `ResetDisk()` method.
 
-<details>
- <summary>Click here to show/hide the <code>OnEpisodeBegin()</code> method...</summary>
-            <br>
+<br>
 
     public override void OnEpisodeBegin()
     {
@@ -279,14 +260,13 @@ The variables are related to the disk object. Some of them are self-explanatory 
        
     }
 
-   </details>    
+  
 
 
 - `CollectObservation()`: The Ml-Agents method collects the observation vectors of the agent for the step. This function describes the current environment from the agent's perspective for achieving the goal.  In this case, the agent needs to keep track of its current z position (due to how the paddle is placed in the game field in the unity scene), the current x and z position, and the velocity component of the disk. This information allows the agent to observe and attempt to hit the disk to keep it inisde the game field. It is important for the system and the training to  know how many elements the agent is tracking, as it needs to match the dimension of the Vector Observation of the Behavior Parameters. In this particular case, the agent is observing five floats.
 
-<details>
- <summary>Click here to show/hide the <code>CollectObservation()</code> method...</summary>
-            <br>
+<br>
+
 
      /*get just the x and z position and velocity of the disk to match the paddle during training*/
     public override void CollectObservations(VectorSensor sensor)
@@ -298,8 +278,7 @@ The variables are related to the disk object. Some of them are self-explanatory 
         sensor.AddObservation(diskTransform.GetComponent<Rigidbody>().velocity.z);
 
     }
-
-   </details>    
+  
 
 - `OnActionRecived()`: The Ml-Agents method is used to specify an agent's behavior at every step, based on the provided action passed through the ActionBuffer parameter, which specifies how many actions are needed to control the agent. In this particular case, since the only movement the paddle needs to perform is along a single axis -- the z-axis (due to how the paddle is positioned in the game field) -- it only requires one continuous action with a single element in the array.
 Continuous action was selected to provide the paddle with a more natural movement and for simplicity, as using the discrete action would have had 3 parameters: one to move up, one to move down, and one to stand still).
@@ -307,9 +286,7 @@ It also sets the reward that incentivizes the agent to align its z coordinates p
 
 
 
-<details>
- <summary>Click here to show/hide the <code>OnActionRecived()</code> method...</summary>
-            <br>
+<br>
 
      public override void OnActionReceived(ActionBuffers actions)
     {
@@ -325,13 +302,11 @@ It also sets the reward that incentivizes the agent to align its z coordinates p
         }
     }
 
-   </details>    
+ 
 
 - `Update()`: This method returns a negative reward to the paddle agent whenever the disk goes out of bounds, ending the current episode and start  a new one. 
 
-<details>
- <summary>Click here to show/hide the <code>Update()</code> method...</summary>
-            <br>
+ <br>
 
       private void Update()
     {
@@ -345,35 +320,31 @@ It also sets the reward that incentivizes the agent to align its z coordinates p
     
     }
 
-   </details>  
+  
    
 - `OnCollisionEnter()`: This method returns a positive reward to the paddle agent each time it successfully hits the disk. This reward was implemented to let the agent know that this action yields a positive outcome, encouraging it to keep the disk inside the field.
 
 <details>
- <summary>Click here to show/hide the <code>OnCollisionEnter()</code> method...</summary>
-            <br>
+<br>
 
        private void OnCollisionEnter(Collision collision)
-    {
-        if(collision.gameObject.tag == "Disk")
-        {
-            SetReward(1f);
-        }
-    }
+      {
+          if(collision.gameObject.tag == "Disk")
+          {
+              SetReward(1f);
+          }
+      }
 
-   </details>    
+   
 
 - `ResetDisk()`: is a function that calls the RestDisk of the Disk class.
-<details>
- <summary>Click here to show/hide the <code>ResetDisk()</code> method...</summary>
-            <br>
+<br>
 
-     private void RestDisk()
-    {
-       
+       private void RestDisk()
+      {
         diskTransform.GetComponent<Disk>().RestDisk();
-    }
-   </details>    
+      }
+  
 
 
 During the development of this section of the project, the main obstacle was the fine-tuning and placement of the different rewards to have a satisfactory result.
@@ -404,9 +375,7 @@ The Behaviour Parameters script and Decision scriptare attached to the object wh
 </div>
 --check this and read this part.
 ### Configuration file (PaddleAi.yamal)
-<details>
-<summary>Click here to show/hide the hyperparameters used </summary>
-    <br>
+<br>
 
     behaviors:
       PaddleAi:
@@ -437,7 +406,7 @@ The Behaviour Parameters script and Decision scriptare attached to the object wh
         max_steps: 2000000
         time_horizon: 1000
         summary_freq: 20000    
-</details>
+
 
 This file contains all the hyperparameter information that are used to create a training session for the agent 
 The behavior name in this file needs to be the same as the behavior chosen in the behavior parameter script.
