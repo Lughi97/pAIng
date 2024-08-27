@@ -50,7 +50,7 @@ In summary of the assignment, it is possible to find the following key points:
 ### Overview
 The main key components to solve this assignment are:
 <ul>
-   <li> Paddle, and Disk class script to set up the agent's behavior, rewards, and  the game environment. </li>
+   <li> `PaddleAgent`, and `Disk` class script to set up the agent's behavior, rewards, and  the game environment. </li>
   <li>Two Unity Scene:
   <ul>
    <li> Training Scene: this is the scene where the agent's training takes place. There are multiple instances of the same game field, each side with only one paddle and a  wall that closes the opposite side. The paddle placement alternates, with some instances where the paddle is on the left side of the field and other on the right side. This setup allows the agent more observation and trains simultaneously on both sides, ensuring that the final neural network model works on both sides, not just one specific position.
@@ -376,18 +376,27 @@ It also sets the reward that incentivizes the agent to align its z coordinates p
    </details>    
 
 
-During the development of this section of the project the main obstacle was the fine tuning and placement of the different reards
+During the development of this section of the project, the main obstacle was the fine-tuning and placement of the different rewards to have a satisfactory result.
 
 
 
 ## Behaviour Parameters & Request Decision class documentation
-In this section, the inspector component connects with the training session in the Python environment.
-In the same object that has the Paddle Agent script, it needs to have the Behaviour Parameters  script and Decision script. 
-In the parameters of the Behaviour Parameter script, there is the  behavior name that is important to define to identify the behavior of the agent.
-Vector Observation: is selected how large is the size of the vector observation, in this case by checking the CollectObservation in the PaddleAi script is 5 elements, the 5 floats mentioned in the `OnActionRecived()`.
- Action: select the type and quantity of action that is going to be used by our agent. In this case like mention in the PaddleAI script, is used only one continuous action type.
-Model: is the reference where is going to be added the trained neural network model created during the training.
-Request Decision Script: it requests a decision every certain amount of time and then takes action.
+The Behaviour Parameters script and Decision scriptare attached to the object which has the `PaddleAgent` script, to connect with Python API in the Python environment.
+<ul>
+  <li> Behaviour Parameters: It defines the behavior and the brain properties of an agent within a learning environment. The important parameters are: </li>
+      <ul> 
+    <li>Behavior name: It is important to identify the behavior of the agent that needs to be the same as the behavior name of the configuration file YAML format (see section Configuration file) </li>
+      <li>Behavior name: It is important to identify the behavior of the agent that needs to be the same as the behavior name of the configuration file YAML format (see section Configuration file) </li>
+      <li>Vector Observation: is a method of collecting and representing environments from the perspective of the agent. It uses numerical arrays (vectors) to capture the relevant information. In order not to have a complication during the training the dimension of 5 numerical values that are defined in the  `CollectObservations()` of the `PaddleAgent` script 
+        <li> Action: refers to the decision made by the agent based on its observation. Also, choose the type and quantity of action that is going to be used by our agent. In this case like mentioned in `OnActionRecived()` of the `PaddleAgent`  script, is used only one continuous action type.</li>
+        <li>Model: is the reference where is going to be added the trained neural network model created</li>
+  </ul>
+  <li>Request Decision Script: it requests a decision every certain amount of time and then takes action.</li>
+</ul>
+
+
+
+
 
 <div align="center">
 
@@ -434,9 +443,18 @@ This file contains all the hyperparameter information that are used to create a 
 The behavior name in this file needs to be the same as the behavior chosen in the behavior parameter script.
 Mlagenst has 2 different types of learning algorithms:  PPO (proximal Policy Optimization) and Soft Actor-Critic (SAC).  In this scenario, the PPO algorithm is used since is  more general-purpose and stable than many other reinforcement algorithms.
 
-<ul>PPO
-  <li>Proximal Policy Optimization algorithm is a deep reinforcement learning algorithm. It is a policy gradient method that aims to improve the training stability of deep reinforcement learning...
-  ...The main challenge of the PPO and also at large for this project is to fine-tune the Hyperparameters to get the desired outcome of the model.</li><ul>
+<ul>PPO (NEEDS TO BE UPDATED THIS IS NOT FINAL)
+  <li>Proximal Policy Optimization (PPO) algorithm deep reinforcement learning algorithm that provides a more stable and efficient approach to policy optimization to balance exploration with exploitation. 
+    <ul>Key Features
+    <li>Probability ratio: r_t(θ) = π_θ(a_t | s_t) / π_θ_old(a_t | s_t)
+        It denotes the probability ratio between the current and the old policy. If this value > 1 then the action is more likely based on .the current policy than the old policy. Vice versa if the value is between 0 and 1</li>
+   
+<li>Advantage Function, Generalized Advantage Estimation (GAE): Â_t = ∑_{l=0}^{∞} (γλ)^l * δ_{t+l} where δ_t = r_t + γ * V(s_{t+1}) - V(s_t)
+  it estimates an action is better or worse than the average return in a given state.</li>
+ <li>Clipped Objective Funciton:L^{CLIP}(θ) = E_t[min(r_t(θ) * A_t, clip(r_t(θ), 1 - ε, 1 + ε) * A_t)]
+ This objective function restricts the change of the policy during training. This helps to mantains the balance between improving the policy and not deviating too far from the old one. </li>
+    </ul>
+ </li><ul>
     
 <ul>Hyperparametrs
 <li>Batch size: the number of experiences used for one iteration of a gradient descend update. It should be a fraction of the buffer size.
@@ -447,7 +465,7 @@ Buffer size defines the number of experiences (agent observation, action, and re
   <li> Epsilon: is the threshold of divergence between the old and the new calculated policy during the gradient descent updating</li> </li>
   <li>Lambda: the lambda used to calculate the Generalized Advantage Estimation. This is how much the agent relies on its current value estimate when calculating an updated value estimate. Low value the agent relies on its current value estimate, making him more biased. On the other hand, if it's a high value it relies more on the actual reward received in the environment. This parameter helps us to balance high bias and exploration. </li>
   <li>Number of epochs: is the number of passes through the experience bugger during gradient descent.</li>
-  <li>learning_rate_schedule: defines how the learning rate changes during training. It will gradually decrease over time. In this case, the learning rate will decrease linearly form the initial value to the final value over a specified number of setups.</li
+  <li>learning_rate_schedule: defines how the learning rate changes during training. It will gradually decrease over time. In this case, the learning rate will decrease linearly from the initial value to the final value over a specified number of setups.</li
   <li>beta_schedule: refers to the beta value, in this case, is constant.</li
   <li>Epsilon Schedule: refers to the gradual adjustment of the epsilon parameter for the exploration strategies, like epsilon-greedy methods. The goal is to favor the exploration at the beginning of the training and decrease over time when the model has a more fleshed-out policy.</li>
 </ul>
@@ -484,9 +502,10 @@ In summary, all of these graphs can sum up the training of the neural network mo
 
 Analyzing all these graphs it can be concluded that from the begging is a steady increase in the mean reward and also the episode length with high variability since the agent gets better and better in following its goal and exploring different ways to keep the disk inside the filed. This idea is refornced by observing also the loss statistic and policy statistic that specific value mentioned increase and decrease correctly for each useful training session made by the agent.
 
-
 <div align="center">
+
 ## Result of the training
+
 </div>
 
 The result of this training is a Neural network model (.oox file) that is going to be placed in the variable model of the Behavior parameters script to both paddles.
