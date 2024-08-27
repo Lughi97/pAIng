@@ -71,7 +71,6 @@ The main key components to solve this assignment are:
 To solve the constraints put on the disk, the Disk class is used to simulate a bouncing disk in a field where the disk conserves the energy but not the direction when it bounces off the walls and conserves both when it bounces off the paddle.
 
 ### Variables
-<details>
 <br>
   
     public float speed = 15;
@@ -103,7 +102,6 @@ The variables are related to the disk object. All of them are self-explanatory
 
 - `OnCollisionEnter()`: It extrapolates the normal of the collision between the disk and the paddle or the wall by accessing their tags set up in the Unity scene.
 
-<details>
  <br>
 
      private void OnCollisionEnter(Collision collision)
@@ -324,7 +322,6 @@ It also sets the reward that incentivizes the agent to align its z coordinates p
    
 - `OnCollisionEnter()`: This method returns a positive reward to the paddle agent each time it successfully hits the disk. This reward was implemented to let the agent know that this action yields a positive outcome, encouraging it to keep the disk inside the field.
 
-<details>
 <br>
 
        private void OnCollisionEnter(Collision collision)
