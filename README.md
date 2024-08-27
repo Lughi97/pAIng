@@ -24,7 +24,7 @@ The field is a flat surface of 10 by 5 meters closed by walls on the long sides 
 ### Constraints
 You must train, using ML, an agent to move the paddle. Of course, the goal of the paddle is to keep the disk inside the field. Once trained, the same agent must be used on both paddles and play against itself
 <ul>
-  <li>The Mlagents version used is 3.0.0(git branch release_21)</li>
+  <li>The Ml-Agents version used is 3.0.0(git branch release_21)</li>
   <li>Python version used for the environment is: 3.10.12</li>
   <li>Torch version  is 1.13.1+ccu117 (cuda version 11.7)</li>
 </ul>
@@ -33,33 +33,43 @@ You must train, using ML, an agent to move the paddle. Of course, the goal of th
 
 <div align="center">
 
-## Problem analysis
+## Assignment analysis
 </div>
-Different problems need to be considered:
+In summary of the assignment, it is possible to find the following key points:
 <ul>
-   <li>The disk has constant speed and has no friction and only when it bounces off a wall is needed to conserve its energy, but not its direction by applying to the outgoing direction a random value change in the range of [-5,5] degrees. When bouncing off a paddle it keeps both energy and direction</li>
-   <li>The agent applied to the paddles must be trained by using the Machine learning provided by Unity technologies to move the paddles up and down to keep the disk inside the field.</li>
-   <li>After the training is completed we need to apply the same model agents to both the paddles to play against each other.</li>
+   <li>The disk has constant speed and no friction and only when it bounces off a wall is needed to conserve its energy, but not its direction by applying a random value change in the range of [-5,5] degrees. When bouncing off a paddle it keeps both energy and direction</li>
+   <li>The agent applied to the paddles must be trained using the Machine learning provided by Unity technologies to move the paddles up and down to keep the disk inside the game field.</li>
+   <li>After completing the training, the neural network model needs to be applied to two paddles so that they can play against each other. </li>
 </ul>
 
 <div align="center">
 
-## Assignment Resolution
+## Assignment Solution
 </div>
 
 ### Overview
-The assignment needs two major components: the Paddle and Disk class script to set up the game environment and the agent with mlagents library compoenet (mlagents version 3.0.0). And the mlagents packages, the configuration file (.yamal), and the neural network trained model (.oox) that are needed to start the training.
+The main key components to solve this assignment are:
+<ul>
+   <li> Paddle, and Disk class script to set up the agent's behavior, rewards, and  the game environment. </li>
+  <li>Two Unity Scene:
+  <ul>
+   <li> Training Scene: this is the scene where the agent's training takes place. There are multiple instances of the same game field, each side with only one paddle and a  wall that closes the opposite side. The paddle placement alternates, with some instances where the paddle is on the left side of the field and other on the right side. This setup allows the agent more observation and trains simultaneously on both sides, ensuring that the final neural network model works on both sides, not just one specific position.
+</li>
+    <li>Paing Scene: a single game instance with two paddles, each using the same neural network model from the training, playing against each other to not letting the disk go out of bounds.</li>
+    </ul>
+</li>
+   <li> The Python API and  Python Trainer are essential to train agents in the Unity environment.
+    <ul>
+      <li>Python API: connects to the Unity environment through the communicator and gets the observation from the agents </li>
+      <li>Python Trainer: execute the training through the `mlagents-learn` based on the  configuration file in YAML format, which contains all the hyperparameters needed for the training session. Implements deep reinforcement learning algorithm, like PPO to  process the observations, decide on actions to take, and send them back to the Unity environment.</li>
+   </ul></li>
+  
+  
 
-<div align="center">
-## Game Environment
-</div>
-In this project, we have two different scenes: 
-<ul></ul>
- <li>>In one we have the training scene where there are multiple instances of the same game field with only one paddle with a wall that closes the other side. Inside the scene, there are alternating paddle positions, where in one there is the paddle on the left side of the field and another one is on the right side. This is done to give the agent more observation and the possibility to train simultaneously on both sides in order not to have a final model that only works for one specific paddle due to its position during training.</li>
- <li>The second scene is the one where we have a single game where we have two paddles that are going to play using the same model obtained in the training to play against each other and not to let the disk go out of bounds. </li>
 
 ## Disk class documentation
-To solve the constraints put on the isk the Disk class is used to simulate a bouncing disk ina field that when it bounces only off the wall will conserve the energy but not the direction.
+To solve the constraints put on the disk, the Disk class is used to simulate a bouncing disk in a field where the disk conserves the energy but not the direction when it bounces off the walls and conserves both when it bounces off the paddle.
+
 ### Variables
 <details>
 <summary>Click here to show/hide the code for variables...</summary>
@@ -76,7 +86,7 @@ To solve the constraints put on the isk the Disk class is used to simulate a bou
 The variables are related to the disk object. All of them are self-explanatory
 
 ### Methods
-- `Start()`: Here set up the random direction of the disk, saving the start position and apply the velocity to the rigidbody.
+- `Start()`: Sets up the random direction of the disk, saving the start position and applying the velocity to the rigid body.
 <details>
         <summary>Click here to show/hide the <code>Start()</code> method...</summary>
             <br>
@@ -94,10 +104,10 @@ The variables are related to the disk object. All of them are self-explanatory
   </details>                 
 
 
-- `OncollisionEnter()`: it extrapolate the normal of the collision between the disk and the paddle or the wall by accessing their tags (set-up) in the Unity scene.
+- `OnCollisionEnter()`: It extrapolates the normal of the collision between the disk and the paddle or the wall by accessing their tags set up in the Unity scene.
 
 <details>
- <summary>Click here to show/hide the <code>OncollisionEnter()</code> method...</summary>
+ <summary>Click here to show/hide the <code>OnCollisionEnter()</code> method...</summary>
             <br>
 
      private void OnCollisionEnter(Collision collision)
@@ -115,7 +125,7 @@ The variables are related to the disk object. All of them are self-explanatory
    </details>    
 
 
-- `BounceOffWall()`: computes the new outgoing direction using the Vector3.reflect function that reflects a vector of the plane defined by a normal, in this case the normal of the collision. Afterward using the 2d rotation matrix, the random value between the range of [-5 to 5] degrees and normalize it. To calculate the new direction, the 3D matrix rotation angle:
+- `BounceOffWall()`: Computes the new outgoing direction using the Vector3.reflect function that reflects a vector of the plane defined by a normal -- in this case, the normal of the collision. Afterward, a random value between the range of [-5 to 5] degreesù is applied to the outgoing direction  using the 3d rotation matrix and normalized. To calculate the new direction, the 3D matrix rotation angle:
   <br> (check how to put it better)
   R(θ) = | cos(θ)  0  -sin(θ) |
   <br>
@@ -123,8 +133,7 @@ The variables are related to the disk object. All of them are self-explanatory
   <br>
          | sin(θ)  0   cos(θ)  |
   <br>
-  is used to calculate the new outgoing direction.
-  Then the rb.velocity is updated with the new direction and maintain the same speed. 
+  Then the rb.velocity is updated with the new direction while mantaining the same speed. 
 
 <details>
  <summary>Click here to show/hide the <code>BounceOffWall()</code> method...</summary>
@@ -169,7 +178,7 @@ The variables are related to the disk object. All of them are self-explanatory
 
    </details>    
 
-- `SpeedCheck()`: it checks if the rb.velocity.speed has been badly influenced, it only reset the speed in the correct direction.
+- `SpeedCheck()`: It checks if the rb.velocity.magnitued has been affected, it reset the speed in the correct direction.
 
 <details>
  <summary>Click here to show/hide the <code>SpeedCheck()</code> method...</summary>
@@ -185,7 +194,7 @@ The variables are related to the disk object. All of them are self-explanatory
 
    </details>  
    
-- `OnTriggerEnter()`: it resets the position of the disk to the start position and applies a new random direction for the disk to take. This is called when a new training episode begins.
+- `OnTriggerEnter()`:It detects when the disk is out of bounds. In case of an out-of-bound event then the environment will reset (see PaddleAi class for more detail).
 
 <details>
  <summary>Click here to show/hide the <code>OnTriggerEnter()</code> method...</summary>
@@ -202,7 +211,7 @@ The variables are related to the disk object. All of them are self-explanatory
 
    </details>    
 
-   - `ResetDisk()`: it detects when the disk is out of bounds. In case of an out-of-bound event then the environment will reset (see PaddleAi class for more detail).
+   - `ResetDisk()`: It resets the position of the disk to the start position and applies a new random direction for the disk to take. This is called when a new training episode begins.
 
 <details>
  <summary>Click here to show/hide the <code>ResetDisk()</code> method...</summary>
@@ -225,7 +234,7 @@ The variables are related to the disk object. All of them are self-explanatory
 
 
 ## Paddle class documentation
-This class implements the behavior of the agent  utilizing the Unity mlagents libraries (Mlagents, Mlagenst.Sensors, Mlagents.actuators) where is added positive or negative rewards for the paddle to learn to keep the disk inside the field.  In this section, all the reward values are fine-tuned after multiple training instances, and found the ones that make the agents more reactive and responsive to the disk movement.
+This class implements the agent's behavior  using  the Unity ML-Agents libraries (Sensors, Actuators). Positive or negative rewards are added for the paddle to learn to keep the disk inside the field.  In this section, all the reward values are fine-tuned after multiple training instances and the ones that make the agents more reactive and responsive to the disk's movement.
 ### Variables
 <details>
 <summary>Click here to show/hide the code for variables...</summary>
@@ -239,11 +248,11 @@ This class implements the behavior of the agent  utilizing the Unity mlagents li
     
 </details>
 
-The variables are related to the disk object. Some of them are self-explanetory Only:
-- `proximityThreshold`: is a float used to tell how the agent z coordinate position has to near to the z coordinate position of the disk to receive a reward.
+The variables are related to the disk object. Some of them are self-explanatory Only:
+- `proximityThreshold`: A float that indicates how close the agent's z coordinates position must be to the disk's z coordinate position to receive a reward.
 
 ### Methods
-- `Start()`: save the startposition as the current transform.position
+- `Start()`: Save the startPosition as the current transform.position
 <details>
         <summary>Click here to show/hide the <code>Start()</code> method...</summary>
             <br>
@@ -256,7 +265,7 @@ The variables are related to the disk object. Some of them are self-explanetory 
   </details>                 
 
 
-- `OnEpisodeBegin()`: This  method form the Unity mlagents library is used to set up the Agent instance at the beginning of each episode and  reset the disk by calling the `ResetDisk()` method.
+- `OnEpisodeBegin()`: The ML-Agents method is used to set up the Agent instance at the beginning of each episode and  reset the disk by calling the `ResetDisk()` method.
 
 <details>
  <summary>Click here to show/hide the <code>OnEpisodeBegin()</code> method...</summary>
@@ -273,7 +282,7 @@ The variables are related to the disk object. Some of them are self-explanetory 
    </details>    
 
 
-- `CollectObservation()`: this mlagents method  collects the observation vectors of the agent for the step. This function describes the current environment form the perspective of the agent needed to achieve its goal.  In this case, the agent needs to keep track of its current z position(this is due to how the paddle is placed in the game field in the unity scene) the current x and z position, and the velocity component of the disk for the agent to observe and try to hit the disk to keep it inside the game field. Is important for the system and the training to  know how many elements are keep track of by the agent and needs to match the dimension of the Vector Observation of the Behavior Parameters. In this particular case the agent is observing five floats.
+- `CollectObservation()`: The Ml-Agents method collects the observation vectors of the agent for the step. This function describes the current environment from the agent's perspective for achieving the goal.  In this case, the agent needs to keep track of its current z position (due to how the paddle is placed in the game field in the unity scene), the current x and z position, and the velocity component of the disk. This information allows the agent to observe and attempt to hit the disk to keep it inisde the game field. It is important for the system and the training to  know how many elements the agent is tracking, as it needs to match the dimension of the Vector Observation of the Behavior Parameters. In this particular case, the agent is observing five floats.
 
 <details>
  <summary>Click here to show/hide the <code>CollectObservation()</code> method...</summary>
@@ -292,8 +301,9 @@ The variables are related to the disk object. Some of them are self-explanetory 
 
    </details>    
 
-- `OnActionRecived()`: This is used to specify an agent's behavior at every step, based on the provided action passed through the ActionBuffer method parameter that specify how many actions are needed to control the agent. In this particular case, since the only movement that the paddle needs to do is along a single axis which is the z-axis (because of how the paddle is positioned in the game field), it only needs one continuous action with only one element in the array. Was selected the continuos action in order to have the paddle have a more natural movement and for simplicity because if it was used the discrete action would have had 3 parameters: one to move up, one to move down, and one to stand still).
-In this function is also set the first reward that incentivizes the agent whenever its z-coordinate position is close to the z-coordinate position of the disk, under a certain treshold.
+- `OnActionRecived()`: The Ml-Agents method is used to specify an agent's behavior at every step, based on the provided action passed through the ActionBuffer parameter, which specifies how many actions are needed to control the agent. In this particular case, since the only movement the paddle needs to perform is along a single axis -- the z-axis (due to how the paddle is positioned in the game field) -- it only requires one continuous action with a single element in the array.
+Continuous action was selected to provide the paddle with a more natural movement and for simplicity, as using the discrete action would have had 3 parameters: one to move up, one to move down, and one to stand still).
+It also sets the reward that incentivizes the agent to align its z coordinates position to the disk's z-coordinate position, enabling it to keep up with the disk.
 
 
 
@@ -317,7 +327,7 @@ In this function is also set the first reward that incentivizes the agent whenev
 
    </details>    
 
-- `Update()`: in this method the paddle, whenever the disk goes out of bounds is going to receive a negative reward and is going to end the current episode and begin a new one
+- `Update()`: This method returns a negative reward to the paddle agent whenever the disk goes out of bounds, ending the current episode and start  a new one. 
 
 <details>
  <summary>Click here to show/hide the <code>Update()</code> method...</summary>
@@ -337,7 +347,7 @@ In this function is also set the first reward that incentivizes the agent whenev
 
    </details>  
    
-- `OnCollisionEnter()`: in this method, each time that the paddle manages to hit the disk, it will recive a positive reward.
+- `OnCollisionEnter()`: This method returns a positive reward to the paddle agent each time it successfully hits the disk. This reward was implemented to let the agent know that this action yields a positive outcome, encouraging it to keep the disk inside the field.
 
 <details>
  <summary>Click here to show/hide the <code>OnCollisionEnter()</code> method...</summary>
@@ -365,7 +375,8 @@ In this function is also set the first reward that incentivizes the agent whenev
     }
    </details>    
 
-  Both of these scripts are simple environments and agent setups. The main challenge is to fine-tune both the hyperparameters and reward system (shown previously) for the agent to hit and keep the disk inside the filed
+
+During the development of this section of the project the main obstacle was the fine tuning and placement of the different reards
 
 
 
