@@ -502,9 +502,49 @@ Analyzing all these graphs it can be concluded that there is a steady increase i
 
 </div>
 
-The result of this training is a Neural network model (.oox file) that is going to be placed in the variable model of the Behavior parameters script to both paddles.
-The final result when running the scene fulfills the requirement of the assignment, which is 2 paddles playing against each other, with the main objective to keep the disk inside the filed. On rare occasions, one of the paddles is not able to hit the disk in time and it goes out of bounds resetting the game. The scoring system is not implemented since it will mean more consideration over rewards and substantial changes in the environment setup
+The result of this training is a neural network model (.oox file) that will be placed in the model variable of the Behavior parameters script to both paddles.
+When running the scene, the final result fulfills the assignment's requirement: two paddles playing against each other, with the main objective of keeping the disk inside the game field. Occasionally, one of the paddles may fail to hit the disk causing it to go out of bounds and resetting the game. Is important to note that the scoring system is not implemented, since wasn't required in the assignment and  it would have meant more consideration over rewards and some changes in the agent behavior.
 
 
+## Summary
+    
+</div>
+All the classes, methods, and parameters, have been analyzed, is useful to recap the project, summing up how the requirements have been fulfilled.
 
+
+<div align="center">
+<table>
+  <tr>
+    <th>Requirement</th>
+    <th>Solution</th>
+  </tr>
+  <tr>
+    <td><span style="color:red">Game field setup</span></td>
+    <td><span style="color:green">Prefab built accordingly</span></td>
+  </tr>
+  <tr>
+    <td><span style="color:red">Disk must maintain a constant speed with no friction</span></td>
+    <td><span style="color:green">Start() and OnCollisionEnter() to calculate the  and random direction and speed that are going to be applied to the rigidbody, without using forces.</span></td>
+  </tr>
+  <tr>
+    <td><span style="color:red">When the disk bounces off a wall it conserves the energy but not the direction by adding to the outgoing direction a value in degrees between -5 and 5.</span></td>
+    <td><span style="color:green">BounceOffWall() method to manage the collision with the wall and calculate the new outgoing direction. </span></td>
+  </tr>
+  <tr>
+    <td><span style="color:red">When the disk bounces off the paddle it conserves the energy and direction</span></td>
+    <td><span style="color:green">BounceOffPaddle() method handles the collision between disk and paddle.</span></td>
+  </tr>
+  <tr>
+    <td><span style="color:red">When the disk goes out of the game filed a new game is stated.</span></td>
+    <td><span style="color:green">The PaddleAgent and Disk handles the moment when the disk goes out of bounds</span></td>
+  </tr>
+  <tr>
+    <td><span style="color:red">Agent must be trained using the Mlagents libraries</span></td>
+    <td><span style="color:green">Downladed the necessary packages needed for creating the training environment in both Python and Unity Scene. In the Unity scene this is handled by the PaddleAgnet(), returning the reward for different actions. In the Python environment, through the configuration YAML and the mlagents-learn, start the Python environment training session connected to the specific unity Scene</span></td>
+  </tr>
+  <tr>
+    <td><span style="color:red">Once trained, the same agent must be used on both paddle and play against itslef</span></td>
+    <td><span style="color:green">The training generated the neural network model (.oox) that is going to be applied to both paddle to play against each other</span></td>
+  </tr>
+</table>
 
