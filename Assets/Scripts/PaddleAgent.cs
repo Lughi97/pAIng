@@ -22,17 +22,17 @@ public class PaddleAgent : Agent
     }
     public override void OnEpisodeBegin()
     {
-     
         transform.position = startPosition;
         RestDisk();
-        // Debug.Log("Position" + transform.position);
     }
     /*get the just the x and z position and velocity of the disk in order to match the paddle during training*/
     public override void CollectObservations(VectorSensor sensor)
     {
+        // disk & paddle position
         sensor.AddObservation(transform.position.z);
         sensor.AddObservation(diskTransform.position.x);
         sensor.AddObservation(diskTransform.position.z);
+        //disk speed
         sensor.AddObservation(diskTransform.GetComponent<Rigidbody>().velocity.x);
         sensor.AddObservation(diskTransform.GetComponent<Rigidbody>().velocity.z);
 
@@ -52,6 +52,7 @@ public class PaddleAgent : Agent
         float moveZ = actions.ContinuousActions[0];
         transform.position += new Vector3(0, 0, moveZ) * Time.deltaTime * speed;
        
+        // 
         float zDistanceToDistk = Mathf.Abs(diskTransform.position.z- transform.position.z);
         if(zDistanceToDistk <= proximityThreshold && Mathf.Abs(diskTransform.position.x - transform.position.x)<5)
         {
@@ -60,16 +61,18 @@ public class PaddleAgent : Agent
     }
     private void Update()
     {
+        // disk goes out of bounds.
         if (diskTransform.GetComponent<Disk>().OutOfBounds|| Vector3.Distance(transform.position, diskTransform.position) > 13f)
         {
           
             SetReward(-1f);
-            RestDisk();
+           // RestDisk();
             EndEpisode();
         }
     
     }
    
+    //Check if the paddle manages to hit the dik
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Disk")

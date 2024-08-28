@@ -141,7 +141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -149,7 +149,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -157,7 +157,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -165,7 +165,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -275,7 +275,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -283,7 +283,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -291,7 +291,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -299,7 +299,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -417,7 +417,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -425,7 +425,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -433,7 +433,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -441,7 +441,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -551,7 +551,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -559,7 +559,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -567,7 +567,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -575,7 +575,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -693,7 +693,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -701,7 +701,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -709,7 +709,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -717,7 +717,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -835,7 +835,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -843,7 +843,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -851,7 +851,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -859,7 +859,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -969,7 +969,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -977,7 +977,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -985,7 +985,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -993,7 +993,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1111,7 +1111,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -1119,7 +1119,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -1127,7 +1127,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -1135,7 +1135,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1253,7 +1253,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -1261,7 +1261,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -1269,7 +1269,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -1277,7 +1277,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1387,7 +1387,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -1395,7 +1395,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -1403,7 +1403,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -1411,7 +1411,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1521,7 +1521,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -1529,7 +1529,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -1537,7 +1537,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -1545,7 +1545,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1655,7 +1655,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -1663,7 +1663,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -1671,7 +1671,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -1679,7 +1679,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1789,7 +1789,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -1797,7 +1797,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -1805,7 +1805,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -1813,7 +1813,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1931,7 +1931,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -1939,7 +1939,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -1947,7 +1947,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -1955,7 +1955,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2073,7 +2073,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -2081,7 +2081,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -2089,7 +2089,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -2097,7 +2097,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2207,7 +2207,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -2215,7 +2215,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -2223,7 +2223,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -2231,7 +2231,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2341,7 +2341,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -2349,7 +2349,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -2357,7 +2357,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -2365,7 +2365,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2475,7 +2475,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -2483,7 +2483,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -2491,7 +2491,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -2499,7 +2499,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2617,7 +2617,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -2625,7 +2625,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -2633,7 +2633,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -2641,7 +2641,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2759,7 +2759,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -2767,7 +2767,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -2775,7 +2775,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -2783,7 +2783,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2901,7 +2901,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -2909,7 +2909,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -2917,7 +2917,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -2925,7 +2925,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3043,7 +3043,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -3051,7 +3051,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -3059,7 +3059,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -3067,7 +3067,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3185,7 +3185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -3193,7 +3193,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -3201,7 +3201,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -3209,7 +3209,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3319,7 +3319,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -3327,7 +3327,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -3335,7 +3335,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -3343,7 +3343,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3453,7 +3453,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -3461,7 +3461,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -3469,7 +3469,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -3477,7 +3477,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3587,7 +3587,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -3595,7 +3595,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -3603,7 +3603,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -3611,7 +3611,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3823,7 +3823,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -3831,7 +3831,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -3839,7 +3839,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -3847,7 +3847,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3965,7 +3965,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -3973,7 +3973,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -3981,7 +3981,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -3989,7 +3989,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4099,7 +4099,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -4107,7 +4107,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -4115,7 +4115,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -4123,7 +4123,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4241,7 +4241,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -4249,7 +4249,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -4257,7 +4257,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -4265,7 +4265,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4383,7 +4383,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -4391,7 +4391,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -4399,7 +4399,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -4407,7 +4407,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4517,7 +4517,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -4525,7 +4525,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -4533,7 +4533,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -4541,7 +4541,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4751,7 +4751,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -4759,7 +4759,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -4767,7 +4767,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -4775,7 +4775,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4885,7 +4885,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -4893,7 +4893,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -4901,7 +4901,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -4909,7 +4909,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5019,7 +5019,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -5027,7 +5027,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -5035,7 +5035,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -5043,7 +5043,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5161,7 +5161,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -5169,7 +5169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -5177,7 +5177,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -5185,7 +5185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5295,7 +5295,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -5303,7 +5303,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -5311,7 +5311,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -5319,7 +5319,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5437,7 +5437,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -5445,7 +5445,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -5453,7 +5453,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -5461,7 +5461,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5610,7 +5610,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -5618,7 +5618,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -5626,7 +5626,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -5634,7 +5634,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5752,7 +5752,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -5760,7 +5760,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -5768,7 +5768,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -5776,7 +5776,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5886,7 +5886,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -5894,7 +5894,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -5902,7 +5902,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -5910,7 +5910,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6028,7 +6028,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -6036,7 +6036,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -6044,7 +6044,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -6052,7 +6052,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6162,7 +6162,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -6170,7 +6170,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -6178,7 +6178,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -6186,7 +6186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6296,7 +6296,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -6304,7 +6304,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -6312,7 +6312,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -6320,7 +6320,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6430,7 +6430,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -6438,7 +6438,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -6446,7 +6446,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -6454,7 +6454,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6572,7 +6572,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -6580,7 +6580,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -6588,7 +6588,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -6596,7 +6596,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6706,7 +6706,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -6714,7 +6714,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -6722,7 +6722,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -6730,7 +6730,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6848,7 +6848,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -6856,7 +6856,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -6864,7 +6864,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -6872,7 +6872,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6982,7 +6982,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -6990,7 +6990,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -6998,7 +6998,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -7006,7 +7006,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7124,7 +7124,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -7132,7 +7132,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -7140,7 +7140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -7148,7 +7148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7266,7 +7266,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -7274,7 +7274,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -7282,7 +7282,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -7290,7 +7290,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7400,7 +7400,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -7408,7 +7408,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -7416,7 +7416,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -7424,7 +7424,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7542,7 +7542,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -7550,7 +7550,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -7558,7 +7558,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -7566,7 +7566,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7676,7 +7676,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -7684,7 +7684,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -7692,7 +7692,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -7700,7 +7700,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7810,7 +7810,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -7818,7 +7818,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -7826,7 +7826,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -7834,7 +7834,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7952,7 +7952,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -7960,7 +7960,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -7968,7 +7968,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -7976,7 +7976,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8094,7 +8094,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -8102,7 +8102,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -8110,7 +8110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -8118,7 +8118,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8236,7 +8236,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -8244,7 +8244,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -8252,7 +8252,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -8260,7 +8260,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8370,7 +8370,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -8378,7 +8378,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -8386,7 +8386,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -8394,7 +8394,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8512,7 +8512,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -8520,7 +8520,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -8528,7 +8528,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -8536,7 +8536,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8654,7 +8654,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -8662,7 +8662,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -8670,7 +8670,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -8678,7 +8678,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8788,7 +8788,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -8796,7 +8796,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -8804,7 +8804,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -8812,7 +8812,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8922,7 +8922,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -8930,7 +8930,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -8938,7 +8938,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -8946,7 +8946,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9056,7 +9056,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -9064,7 +9064,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1301570420583731388, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsTrigger
@@ -9072,7 +9072,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
@@ -9080,7 +9080,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2738446310020617898, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x

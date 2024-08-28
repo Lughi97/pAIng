@@ -19,15 +19,10 @@ public class Disk : MonoBehaviour
         int startRandomDirection = Random.Range(0, 360);
         direction = new Vector3(Mathf.Cos(startRandomDirection * Mathf.Deg2Rad), 0f, Mathf.Sin(startRandomDirection * Mathf.Deg2Rad));
         startPosition = transform.position;
-        rb.velocity = rb.velocity.normalized * speed;
+        //rb.velocity = rb.velocity.normalized * speed;
+        rb.velocity = direction * speed;
     }
 
-    private void FixedUpdate()
-    {
-        // rb.velocity = direction * speed;
-        //  Debug.Log(rb.velocity.magnitude);
-        //SpeedCheck();
-    }
     private void SpeedCheck()
     {
         if (rb.velocity.magnitude < speed)
@@ -51,8 +46,9 @@ public class Disk : MonoBehaviour
     // calculate the new outgoing direction based on the normal of the collision contact with the wall.
     private void BounceOffWall(Vector3 normal)
     {
+        Vector3 incomingDirection = direction;
         direction = Vector3.Reflect(direction, normal);
-
+        float incomingAngle = Mathf.Atan2(incomingDirection.z, incomingDirection.x) * Mathf.Rad2Deg;
         // Calculate the new outgoing direction of the disk.
         float randomDeflectAngle = Random.Range(-5f, 5f) * Mathf.Deg2Rad;
         // use the 2d rotation matrix.
@@ -60,9 +56,13 @@ public class Disk : MonoBehaviour
         float directionZ = direction.x * Mathf.Sin(randomDeflectAngle) + direction.z * Mathf.Cos(randomDeflectAngle);
 
         direction = new Vector3(directionX, 0f, directionZ).normalized;
+        float outgoingAngle = Mathf.Atan2(direction.z, direction.x) * Mathf.Rad2Deg;
         //apply the new direction with the same speed in order keep energy.
         rb.velocity = direction * speed;
         SpeedCheck();
+        // Log the incoming and outgoing angles
+       // Debug.Log($"Incoming angle: {incomingAngle:F2} degrees");
+       // Debug.Log($"Outgoing angle: {outgoingAngle:F2} degrees");
     }
 
     // calcualte the new outgoing direction based on the normal of the collision contact with the paddle.
