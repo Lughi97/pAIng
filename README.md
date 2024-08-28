@@ -446,7 +446,7 @@ Mlagenst has 2 different types of learning algorithms:  PPO (proximal Policy Opt
 </li>
 <li>Learing rate: corresponds to the strength of each gradient descent update step. </li>
   <li>Beta: is the strength of the entropy regularization to make the policy more random for the agent to explore the action space during training. </li>
-  <li> Epsilon: is the threshold of divergence between the old and the new calculated policy during the gradient descent updating. Are the clipping parameters for the PPO policy</li> 
+  <li> Epsilon: is the divergence threshold between the old and the new calculated policy during the gradient descent updating. Are the clipping parameters for the PPO policy</li> 
   <li>Lambda: the lambda used to calculate the Generalized Advantage Estimation. This is how much the agent relies on its current value estimate when calculating an updated value estimate. Low value the agent relies on its current value estimate, making him more biased. On the other hand, if it's a high value it relies more on the actual reward received in the environment. This parameter helps us to balance high bias and exploration. </li>
   <li>Number of epochs: is the number of passes through the experience bugger during gradient descent.</li>
   <li>learning_rate_schedule: defines how the learning rate changes during training. It will gradually decrease over time. In this case, the learning rate will decrease linearly from the initial value to the final value over a specified number of setups.</li
@@ -454,44 +454,47 @@ Mlagenst has 2 different types of learning algorithms:  PPO (proximal Policy Opt
   <li>Epsilon Schedule: refers to the gradual adjustment of the epsilon parameter for the exploration strategies, like epsilon-greedy methods. The goal is to favor the exploration at the beginning of the training and decrease over time when the model has a more fleshed-out policy.</li>
    <li>Network Setting: specifies the structure of the neural network:
          - Normalize: normalization is applied to the vector observation inputs. Is helpful in complex continuous problems, like in this case, to improve training stability.
-         - Hidden Units: the number of units in each fully connected layer of neural network.
+         - Hidden Units: the number of units in each fully connected neural network layer.
           - Number of Layers: the number of hidden layers.</li>
-  <li> Reward Signals: is what it agent recive as feedback form the environment. They help the agent to learn which action leads to positive outcomes. 
-        - Gamma: is the discount factor for future rewards. It means how much the agent values future rewards compered to immediate rewards.
-        - Strenght: is a multiplier factor for the raw reward. </li>
+  <li> Reward Signals: the agent receives feedback from the environment. They help the agent to learn which action leads to positive outcomes. 
+        - Gamma: is the discount factor for future rewards. It means how much the agent values future rewards compared to immediate rewards.
+        - Strength: is a multiplier factor for the raw reward. </li>
 </ul>
  
 ### Analysis of the training with this specific configuration file
 
 #### Training Process
-This segment of the assinement is the most time-consuming because it requires monitoring the changes in the mean reward and standard deviation of rewards to analyze in real-time how effectively the agent in training.
-In these images (need to be added) are some moments that represent the current mean reward and str (standard deviation reward) in precise steps, in which the interval is set by the hyperparameter summary_freq.
-Analyzing this run time training information highlights a steady mean reward growth increasing each step summary, apart from some fluctuation always in the positive values. This means the agent is learning to take action that yields higher rewards over time.
-Considering  the Standard Deviation of Rewards can highlight a more detailed look at the agent's performance. In this case, the std keeps increasing as well over time and it's having some high fluctuations (between value-value) (add image to put correct data). This shows that the agent is exploring different strategies more actively to yield better results.
-However, this is not enough information useful to the developer to understand if the training was effective. 
-To have more information is advised to analyze also the information given by the tensorboard application.
+This segment of the assignment is the most time-consuming because it requires monitoring the changes in the mean reward and standard deviation of rewards to analyze in real time how effectively the agent is in training.
+In these images (need to be added) are some snapshots that illustrate the current mean reward and standard deviation reward (str) at specific intervals determined by the `summary_freq` hyperparameter.
+Analyzing this run time training information highlights a steady mean reward growth increasing each step summary, despite some fluctuation. This indicates that the agent is learning to take action that yields higher rewards over time.
+Considering  the Standard Deviation of Rewards can yield a more detailed look at the agent's performance. In this case, the std keeps increasing as well over time and it's having some high fluctuations (between value-value) (add image to put correct data). These variations show that the agent is actively exploring different strategies to yield better results.
+However, this is not enough information useful to the developer in order to understand the effectiveness of the training. 
+To have more information it can be useful to  analyze the information given by the Tensorboard application.
 
 #### Tensorboard results analysis
-Tensorbaord provides all the visual information of different aspects of the training that can inform the developer if the model was trained correctly.
-In summary, all of these graphs can sum up the training of the neural network model tuned with these specific hyperparameters and can help us understand highlights a positive trend of the mean reward. 
+Tensorboard provides a complete insight into various aspects of the training process that allows us to understand if the model was trained effectively.
+The graph here summarizes the training of the neural network model tuned with the parameters of the configuration used for this agent. 
 
 <ul>Enviroment Statistic
-    <li>The first graph represents  the mean cumulative reward over all the agents and is the same information that is shown in the training process but put in graph</li>
-<li>Episode length graph represents the mean length of each episode for all the agents </li>
+    <li>Mean Cumulative Reward: Graph that represents the mean cumulative reward over all the agents and is the same information that is shown in the training process but in a visual format.</li>
+<li>Episode Length: The graph represents the mean length of each episode for all the agents, providing insight into how their performance evolves. </li>
 </ul>
 
 <ul>Loss statistics
-    <li>Policy loss graph: is the mean loss of policy loss function, it fluctuates with a tendency to decrease over time</li>
+    <li>Policy loss graph: is the mean loss of policy loss function. It fluctuates with a tendency to decrease over time</li>
 <li> Vlaue loss graph: the mean loss of the value function update. This represents how the model can predict the value of each state. First, it increases when the agent is learning and steadily decreases once it stabilizes.</li>
 </ul>
 
 <ul>Policy statistics
-    <li>Entropy: it represents how random the model is. This decreases during successful training process</li>
-<li>Learning rate:  is how large a step the training algorithm takes as it searches for the optimal policy. In this case, since is set as linear in the hyperparameters, the graph is a straight line between the max balance learning rate and min value when the training stops at the 2000000 step. </li>
-  <li> Extrinsic reward: it corresponds to the mean cumulative reward received from the environment per episode In our case there is a steady increase over time since the agent is correctly learning to keep the disk inside the field. </li>
+    <li>Entropy: it represents the unpredictability of the action taken by the model. A decrease in entropy during a successful training process means that the model tends to favor effective actions. </li>
+<li>Learning rate: This parameter determines how large of a step the training algorithm takes as it searches for the optimal policy. In this case, since is set as linear in the hyperparameters, the graph is a straight line transitioning from  the max balance learning rate to the minum value when the training stops at the 3000000 step. </li>
+  <li> Extrinsic reward: This statistic corresponds to the mean cumulative reward received from the environment per episode In our case there is a steady increase over time since the agent is correctly learning to keep the disk inside the field. </li>
+    <li> Extrinsic Value Estimate: This statistic corresponds to the mean value estimate for all states visited by the agent. It increases when successful </li>
+      <li> Epsilon: This parameter, set in the hyperparameters of the configuration YAML, and shows a steady decrease over time. </li>
+   <li> Beta: This parameter, set in the hyperparameters of the configuration YAML, is a constant value.</li>
 </ul>
 
-Analyzing all these graphs it can be concluded that from the begging is a steady increase in the mean reward and also the episode length with high variability since the agent gets better and better in following its goal and exploring different ways to keep the disk inside the filed. This idea is refornced by observing also the loss statistic and policy statistic that specific value mentioned increase and decrease correctly for each useful training session made by the agent.
+Analyzing all these graphs it can be concluded that there is a steady increase in the mean reward and also the episode length accompanied by high variability. This suggests that the agent gets better and better at following its goal and exploring different strategies to keep the disk inside the game field. This conclusion is further supported by analysis of both the loss and policy statistics that demonstarte the expected increases and decreases. All of this information suggests that the agent had an effective training.
 
 <div align="center">
 
