@@ -853,6 +853,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 15
   direction: {x: 0, y: 0, z: 0}
+  rb: {fileID: 309425588199653168}
   OutOfBounds: 0
 --- !u!1 &6806470860909241545
 GameObject:
@@ -976,16 +977,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 5
+    VectorObservationSize: 6
     NumStackedVectorObservations: 1
     m_ActionSpec:
-      m_NumContinuousActions: 1
+      m_NumContinuousActions: 2
       BranchSizes: 
-    VectorActionSize: 01000000
+    VectorActionSize: 02000000
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 5022602860645237092, guid: 834afec11e590b24389d5f0a18bc8a3f, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: PaddleAi
@@ -1011,10 +1012,11 @@ MonoBehaviour:
   hasUpgradedFromAgentParameters: 1
   MaxStep: 10000
   diskTransform: {fileID: 2179364289818957289}
-  speed: 7.5
+  currentSpeed: 0
+  minSpeed: 5
+  maxSpeed: 25
   startPosition: {x: 0, y: 0, z: 0}
-  resetFirstHit: 0
-  proximityThreshold: 0.5
+  zDistanceThreshold: 0.5
 --- !u!114 &674058248464077297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1320,16 +1322,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 5
+    VectorObservationSize: 6
     NumStackedVectorObservations: 1
     m_ActionSpec:
-      m_NumContinuousActions: 1
+      m_NumContinuousActions: 2
       BranchSizes: 
-    VectorActionSize: 01000000
+    VectorActionSize: 02000000
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: f5669ccb064b9604a90bb9649b7017b8, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: 834afec11e590b24389d5f0a18bc8a3f, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: PaddleAi
@@ -1355,10 +1357,11 @@ MonoBehaviour:
   hasUpgradedFromAgentParameters: 1
   MaxStep: 10000
   diskTransform: {fileID: 2179364289818957289}
-  speed: 7.5
+  currentSpeed: 0
+  minSpeed: 5
+  maxSpeed: 25
   startPosition: {x: 0, y: 0, z: 0}
-  resetFirstHit: 0
-  proximityThreshold: 0.5
+  zDistanceThreshold: 0.5
 --- !u!114 &1299001399166732865
 MonoBehaviour:
   m_ObjectHideFlags: 0
