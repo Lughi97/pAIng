@@ -153,11 +153,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
       value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
+      propertyPath: maxSpeed
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
+      propertyPath: minSpeed
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1050516245052339104, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
@@ -165,11 +173,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: speed
-      value: 15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: MaxStep
       value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
+      propertyPath: maxSpeed
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
+      propertyPath: minSpeed
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2302524483067930889, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: proximityThreshold
@@ -190,7 +206,27 @@ PrefabInstance:
     - target: {fileID: 4118548527755964389, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 885b532bf83e9b24f9ca21976f0deae6, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: d4d8e55fb169d4b4bbb3df584cb3b469, type: 3}
+    - target: {fileID: 4118548527755964389, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118548527755964389, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
+      propertyPath: m_BrainParameters.NumStackedVectorObservations
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118548527755964389, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
+      propertyPath: m_BrainParameters.VectorActionSize.Array.data[0]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118548527755964389, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
+      propertyPath: m_BrainParameters.m_ActionSpec.m_NumContinuousActions
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4834215162646671900, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 1148370311}
     - target: {fileID: 4918272300292106177, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -246,7 +282,23 @@ PrefabInstance:
     - target: {fileID: 5753597795694614916, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 885b532bf83e9b24f9ca21976f0deae6, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: d4d8e55fb169d4b4bbb3df584cb3b469, type: 3}
+    - target: {fileID: 5753597795694614916, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5753597795694614916, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
+      propertyPath: m_BrainParameters.NumStackedVectorObservations
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5753597795694614916, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
+      propertyPath: m_BrainParameters.VectorActionSize.Array.data[0]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5753597795694614916, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
+      propertyPath: m_BrainParameters.m_ActionSpec.m_NumContinuousActions
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6806470860909241545, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -268,6 +320,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
+--- !u!54 &1148370311 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 309425588199653168, guid: 4de0e491841bb5c46af4b8a04b6dcac3, type: 3}
+  m_PrefabInstance: {fileID: 245304152}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1328974647
 GameObject:
   m_ObjectHideFlags: 0
