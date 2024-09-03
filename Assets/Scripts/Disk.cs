@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 /// <summary>
 /// Class handels:
-/// 1- Collision handeling when the disk collide with the wall or paddle
+/// 1- Collision handeling between disk and wall or paddle
 /// </summary>
 public class Disk : MonoBehaviour
 {
@@ -51,7 +51,7 @@ public class Disk : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Bound" || other.gameObject.tag == "BoundPaddle")
+        if (other.gameObject.tag == "Bound")
         {
             OutOfBounds = true;
         }

@@ -23,8 +23,8 @@ public class PaddleAgent : Agent
   
     public Vector3 startPosition;
     
-    public float zDistanceThreshold = 0.5f; // minimal thershold z cooridnate  in order to get a reward.
-    private float optimalSpeed = 2f; // speed ranges in which agent is rewared.
+    public float zDistanceThreshold = 0.5f; // minimal thershold z coordinate  in order to get a reward.
+    private float optimalSpeed = 2f; // speed ranges in which agent is rewarded.
 
     
     void Start()
