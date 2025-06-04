@@ -17,10 +17,8 @@ idna==3.7
 Jinja2==3.1.4
 Markdown==3.6
 MarkupSafe==2.1.5
-# Editable install with no version control (mlagents==1.1.0.dev0)
--e c:\users\lucag\documents\aiprojects\aiproject\paing\python-envs\mlagents-env\scripts\ml-agents\ml-agents
-# Editable install with no version control (mlagents_envs==1.1.0.dev0)
--e c:\users\lucag\documents\aiprojects\aiproject\paing\python-envs\mlagents-env\scripts\ml-agents\ml-agents-envs
+mlagents==1.1.0
+mlagents_envs==1.1.0
 mpmath==1.3.0
 networkx==3.3
 numpy==1.23.3
