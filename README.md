@@ -7,7 +7,7 @@ Developed as a solo project for the **AI for Video Games** course at the **Unive
 
 ---
 
-## 🎮 About the Project
+## About the Project
 
 pAIng is a Unity-based Pong prototype built to train and deploy a **reinforcement learning agent** using **Unity ML-Agents** and the **Proximal Policy Optimization (PPO)** algorithm. The agent learns entirely through trial and error — no hard-coded rules, no manual scripting of movement logic. Once trained, the same neural network model is applied to both paddles, making them play against each other autonomously.
 
@@ -15,7 +15,7 @@ The project was developed as a university assignment to demonstrate a complete M
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |---|---|
